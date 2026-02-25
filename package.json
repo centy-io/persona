@@ -15,7 +15,8 @@
     ".": "./dist/index.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "proto"
   ],
   "scripts": {
     "build": "tsup",
@@ -31,6 +32,7 @@
     "cspell": "^9.7.0",
     "eslint": "^9.39.3",
     "eslint-config-agent": "^2.0.1",
+    "eslint-import-resolver-typescript": "^4.4.4",
     "husky": "^9.1.7",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
@@ -44,6 +46,8 @@
     "access": "public"
   },
   "dependencies": {
+    "@grpc/grpc-js": "^1.14.3",
+    "@grpc/proto-loader": "^0.8.0",
     "@oclif/core": "^4.8.1"
   }
 }
