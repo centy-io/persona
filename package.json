@@ -6,7 +6,7 @@
   "author": "Centy",
   "repository": {
     "type": "git",
-    "url": "https://github.com/centy-io/persona.git"
+    "url": "git+https://github.com/centy-io/persona.git"
   },
   "homepage": "https://github.com/centy-io/persona#readme",
   "bugs": {
@@ -24,7 +24,7 @@
   },
   "packageManager": "pnpm@10.30.2",
   "bin": {
-    "persona": "./dist/index.js"
+    "persona": "dist/index.js"
   },
   "main": "./dist/index.js",
   "exports": {
