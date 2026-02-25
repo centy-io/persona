@@ -1,0 +1,46 @@
+{
+  "permissions": {
+    "allow": ["Bash(centy:*)"],
+    "deny": ["Bash(npm install)", "Bash(gh issue create:*)"]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pnpm dlx block-no-verify"
+          }
+        ]
+      },
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pnpm dlx ai-fs-permissions --op read"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pnpm dlx ai-fs-permissions --op write"
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pnpm dlx ai-fs-permissions --op write"
+          }
+        ]
+      }
+    ]
+  }
+}
