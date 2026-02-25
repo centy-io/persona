@@ -22,4 +22,4 @@ export const ITEM_TYPES = [
       { name: "acceptance-criteria", field_type: "string" },
     ],
   },
-] as const;
+];
