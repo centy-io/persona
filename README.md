@@ -4,7 +4,11 @@ Persona CLI by [Centy](https://github.com/centy-io) — manage user personas and
 
 ## Prerequisites
 
-- [Centy daemon](https://github.com/centy-io/centy-cli) must be running
+`@centy/persona` communicates with the **centy daemon** over **gRPC**.
+
+- The [centy daemon](https://github.com/centy-io/centy-daemon) must be installed and running locally (default: `127.0.0.1:50051`)
+- See the [centy-daemon repo](https://github.com/centy-io/centy-daemon) for installation instructions
+- `persona init` will fail with a connection error if the daemon is not running
 
 ## Installation
 
