@@ -18,7 +18,8 @@
       "Bash(grep:*)",
       "Bash(npx centy:*)",
       "mcp__ide__getDiagnostics",
-      "Bash(gh run:*)"
+      "Bash(gh run:*)",
+      "WebSearch"
     ],
     "deny": ["Bash(npm install)", "Bash(gh issue create:*)"]
   },
