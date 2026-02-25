@@ -6,5 +6,5 @@
   "priorityLevels": 3,
   "stateColors": {},
   "version": "0.8.0",
-  "workspace.updateStatusOnOpen": false
+  "workspace.updateStatusOnOpen": true
 }
