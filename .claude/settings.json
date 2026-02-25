@@ -17,7 +17,8 @@
       "Bash(node:*)",
       "Bash(grep:*)",
       "Bash(npx centy:*)",
-      "mcp__ide__getDiagnostics"
+      "mcp__ide__getDiagnostics",
+      "Bash(gh run:*)"
     ],
     "deny": ["Bash(npm install)", "Bash(gh issue create:*)"]
   },
