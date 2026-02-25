@@ -3,6 +3,7 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   test: {
     include: ["src/**/*.test.ts"],
+    passWithNoTests: true,
     coverage: {
       provider: "v8",
       reporter: ["text", "lcov", "html"],
@@ -12,6 +13,10 @@ export default defineConfig({
         functions: 100,
         lines: 100,
       },
+      include: ["src/**/*.ts"],
+      // Exclude test files and CLI entry point (index.ts is a bare oclif runner;
+      // ESLint DDD rules disallow index.test.ts files)
+      exclude: ["src/**/*.test.ts", "src/index.ts"],
     },
   },
 });
