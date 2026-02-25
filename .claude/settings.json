@@ -6,7 +6,13 @@
       "Bash(grep:*)",
       "Bash(python3:*)",
       "Bash(git add:*)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(git rebase:*)",
+      "Bash(git commit:*)",
+      "Bash(pnpm install:*)",
+      "Bash(git:*)",
+      "Bash(pnpm eslint:*)",
+      "Bash(pnpm add:*)"
     ],
     "deny": ["Bash(npm install)", "Bash(gh issue create:*)"]
   },
